@@ -18,6 +18,7 @@ phases:
       - echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >>~/.bashrc
       - echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >>~/.bashrc
       - source ~/.bashrc
+      - chmod +x $HOME/.nvm/nvm.sh
       - $HOME/.nvm/nvm.sh --version
       - $HOME/.nvm/nvm.sh install --lts
       - node --version
