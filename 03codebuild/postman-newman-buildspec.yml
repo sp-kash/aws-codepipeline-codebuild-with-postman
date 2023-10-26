@@ -21,8 +21,8 @@ phases:
       - chmod +x $HOME/.nvm/nvm.sh
       - $HOME/.nvm/nvm.sh --version
       - $HOME/.nvm/nvm.sh install --lts
-      - nvm install 20.9.0
-      - nvm use 20.9.0
+      - $HOME/.nvm/nvm.sh install 20.9.0
+      - $HOME/.nvm/nvm.sh use 20.9.0
       - node --version
       - npm install -g newman
       - yum install -y jq
