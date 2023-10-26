@@ -192,7 +192,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: aws/codebuild/nodejs:18.12.0
+        Image: aws/codebuild/standard:7.0-23.07.28
       Source:
         Location: !Join
         - ''
