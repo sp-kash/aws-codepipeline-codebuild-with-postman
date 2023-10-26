@@ -23,7 +23,8 @@ phases:
       - $HOME/.nvm/nvm.sh --version
       # - $HOME/.nvm/nvm.sh install --lts
       # - $HOME/.nvm/nvm.sh uninstall 12.16.1
-      - sudo rm -rf /usr/local/bin/node /usr/local/bin/npm
+      - sudo rm -rf /usr/local/bin/node 
+      # - sudo rm -rf /usr/local/bin/npm
       - sudo $HOME/.nvm/nvm.sh install 20.9.0
       - sudo $HOME/.nvm/nvm.sh use 20.9.0
       - sudo $HOME/.nvm/nvm.sh alias default 20.9.0
