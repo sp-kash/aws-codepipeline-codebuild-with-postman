@@ -21,6 +21,7 @@ phases:
       - chmod +x $HOME/.nvm/nvm.sh
       - $HOME/.nvm/nvm.sh --version
       - $HOME/.nvm/nvm.sh install --lts
+      - $HOME/.nvm/nvm.sh uninstall 12.16.1
       - $HOME/.nvm/nvm.sh install 20.9.0
       - $HOME/.nvm/nvm.sh use 20.9.0
       - node --version
