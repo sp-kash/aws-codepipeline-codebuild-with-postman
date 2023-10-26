@@ -6,9 +6,10 @@ env:
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18
+    # runtime-versions:
+    #   nodejs: 18.x
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
+      - n 19.8.1
       - npm install -g newman
       - yum install -y jq
 
