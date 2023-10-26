@@ -11,6 +11,7 @@ phases:
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
       # - n 20.9.0
       - yum install -y curl
+      # - yum uninstall -y node
       - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
       - echo "" >>~/.bashrc
       - echo "# Add NVM to path" >>~/.bashrc
@@ -20,8 +21,9 @@ phases:
       - source ~/.bashrc
       - chmod +x $HOME/.nvm/nvm.sh
       - $HOME/.nvm/nvm.sh --version
-      - $HOME/.nvm/nvm.sh install --lts
-      - $HOME/.nvm/nvm.sh uninstall 12.16.1
+      # - $HOME/.nvm/nvm.sh install --lts
+      # - $HOME/.nvm/nvm.sh uninstall 12.16.1
+      - sudo rm -rf /usr/bin/node /usr/bin/npm
       - $HOME/.nvm/nvm.sh install 20.9.0
       - $HOME/.nvm/nvm.sh use 20.9.0
       - node --version
