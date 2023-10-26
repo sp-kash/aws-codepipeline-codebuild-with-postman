@@ -24,9 +24,12 @@ phases:
       # - $HOME/.nvm/nvm.sh install --lts
       # - $HOME/.nvm/nvm.sh uninstall 12.16.1
       - sudo rm -rf /usr/bin/node /usr/bin/npm
-      - $HOME/.nvm/nvm.sh install 20.9.0
-      - $HOME/.nvm/nvm.sh use 20.9.0
+      - sudo $HOME/.nvm/nvm.sh install 20.9.0
+      - sudo $HOME/.nvm/nvm.sh use 20.9.0
       - node --version
+      - which node
+      - which npm
+      - sudo $HOME/.nvm/nvm.sh alias default 20.9.0
       - npm install -g newman
       - yum install -y jq
 
