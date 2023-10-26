@@ -9,7 +9,7 @@ phases:
     # runtime-versions:
     #   nodejs: 18.x
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
-      - n 19.8.1
+      - n 18
       - npm install -g newman
       - yum install -y jq
 
