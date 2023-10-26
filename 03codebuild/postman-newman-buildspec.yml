@@ -10,7 +10,7 @@ phases:
     #   nodejs: 18.x
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
       # - n 20.9.0
-      - sudo apt-get update; sudo apt-get install -y curl
+      - yum install -y curl
       - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
       - echo "" >>~/.bashrc
       - echo "# Add NVM to path" >>~/.bashrc
